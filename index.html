@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/index.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta
+            name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+            integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+            crossorigin="anonymous">
+
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <title>Elemental Plane</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="50"
+                    height="40" class="d-inline-block align-top" alt="">
+
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Repair</a>
+                            <a class="dropdown-item" href="#">Installation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Support</a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            id="accountDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="javascript:void(0)"
+                                data-toggle="modal" data-target="#login">Login</a>
+                            <a class="dropdown-item" href="javascript:void(0)"
+                                data-toggle="modal" data-target="#signup">Signup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"
+                            data-toggle="modal" data-target="#contact">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn my-2 my-sm-0"
+                        type="submit">Search</button>
+                </form>
+
+
+
+            </div>
+
+
+        </nav>
+        <!-- 
+        login modal -->
+
+        <div class="modal fade" id="login" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">LogIn</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <div class="mb-3">
+                                Email:<input type="email" class="form-control"
+                                    placeholder="Email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                Password:<input type="password"
+                                    class="form-control" placeholder="Password"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox">
+                                    Remember Me
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn" style="
+                                background-color: #834bd1;color:white;">Sign
+                                In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" style="
+                            background-color: #834bd1;color:white;"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        signup -->
+        <div class="modal fade" id="signup" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLongTitle">Please
+                            Create Your Account</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Signup</h5>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="Username">Username<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" name="username"
+                                        class="form-control" id="Username"
+                                        placeholder="Enter Username">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="Email">Email<span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" name="email"
+                                        class="form-control" id="Email"
+                                        placeholder="Enter Email">
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="Password">Password<span
+                                            class="text-danger">*</span></label>
+                                    <input type="password" name="password"
+                                        class="form-control" id="password"
+                                        placeholder="Enter Password">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="Re-enter-Password">Re-Enter
+                                        Password<span
+                                            class="text-danger">*</span></label>
+                                    <input type="password"
+                                        name="re-enterpassword"
+                                        class="form-control"
+                                        id="Re-enter-password"
+                                        placeholder="Re-Enter Password">
+                                </div>
+
+
+
+                                <div class="mb-3">
+                                    <input class="form-check-input"
+                                        type="checkbox" value="" id="remember"
+                                        required>
+                                    <label class="form-check-label"
+                                        for="remember">Remember Me</label>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-footer pt-4">
+                                <button type="button" class="btn
+                                    mx-auto w-100" style="
+                                    background-color: #834bd1;color:white;">Sign
+                                    up</button>
+                            </div>
+
+                            <p class="text-center">Already Have an Account? <a
+                                    href="#">Login</a></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn"
+                            data-dismiss="modal" style="
+                            background-color: #834bd1;color:white;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 
+        contact us modal -->
+
+        <div class="modal fade" id="contact" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactus">Leave a message
+                            or visit our Socials</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <input type="email" name="email"
+                                    placeholder="Email Id" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn" style="
+                                    background-color: #834bd1;color:white;">Submit</button>
+                            </div>
+
+                            <div>
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #3b5998" href="#!"
+                                    role="button"> <i class="bi bi-facebook"></i></a>
+                                <!-- Twitter -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #55acee" href="#!"
+                                    role="button"><i class="bi bi-twitter"></i></a>
+                                <!-- Google -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #dd4b39" href="#!"
+                                    role="button"><i class="bi bi-google"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #ac2bac" href="#!"
+                                    role="button"><i class="bi bi-instagram"></i></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #0082ca" href="#!"
+                                    role="button"><i class="bi bi-linkedin"></i></a>
+                                <!-- Github -->
+                                <a class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #333333" href="#!"
+                                    role="button"><i class="bi bi-github"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" style="
+                            background-color: #834bd1;color:white;"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide"
+            data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"></li>
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators"
+                    data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 h-80" src="img/slide1.jpg"
+                        alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Generate, Conserve, Contribute</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 h-80" src="img/slide2.jpg"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Solar energy—clean, abundant, and ready for you</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 h-80" src="img/slide3.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>
+                            The solar energy source is good for the home,
+                            the
+                            grid, and your wallet</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 h-80" src="img/slide4.jpg"
+                        alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>See how your home, paired with solar power, can
+                            impact the environment and benefit your savings</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 h-80" src="img/slide5.jpg"
+                        alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Let the sun work for you. Simply switch your
+                            home or
+                            business to solar and start saving!</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 h-80" src="img/slide6.jpg"
+                        alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>We want to power our homes with clean, renewable
+                            solar energy ― not dirty fossil fuels that
+                            pollute
+                            our air and water</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <a class="carousel-control-prev "
+                    href="#carouselExampleIndicators"
+                    role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+
+
+
+        <div id="position" class=" border border-5"
+            style="height:1300px;
+            background-color: whitesmoke;">
+
+            <div class="p-3" id="solar-energy"
+                style="width:40%;height:800px;
+                background-color:rgb(194, 189, 189);">
+
+                <span>
+                    <center><h1 class="mt-3 " style="color:white;">Solar
+                            Energy</h1></center>
+                </span>
+
+                <br><br>
+                <center>
+                    <p style="font-size:25px; font-weight:bold; ">
+                        <i>SOLAR POWER IS POLLUTION-FREE AND CAUSES NO
+                            GREENHOUSE
+                            GASES</i>
+                    </p>
+                    <br><br>
+                    <p>
+                        The source of solar energy—the sun—is nearly
+                        limitless
+                        and can be accessed anywhere on earth at one time or
+                        another. It would take around 10 million acres of
+                        land—or only 0.4% of the area of the United
+                        States—to
+                        allow enough space for solar photovoltaics (PV) to
+                        supply all of our nation’s electricity.
+                    </p>
+
+                    <p>
+                        In today’s economy, you must have a plan. With
+                        ElementalPlane
+                        Solar you have someone on your side. Our expertise
+                        as a
+                        solar energy provider will arm you with all the
+                        information you need about going solar. The risk is
+                        low,
+                        and the reward is high. We’re ready to roll up our
+                        sleeves and help you prosper without lifting a
+                        finger.
+                    </p>
+                    <br>
+
+                    <button type="button" class="btn"
+                        style="width:200px; height:50px;
+                        font-size:20px; background-color:#834bd1;
+                        color:white;" data-toggle="modal"
+                        data-target="#plans">
+                        View Plans
+                    </button>
+                </center>
+
+
+            </div>
+
+            <div class="mt-2" id="bg1">
+                <img src="img/bg1.jpg" class="image-fluid" width="100%"
+                    alt="" height="350">
+            </div>
+
+
+            <div class="" id="bg2">
+                <img src="img/bg2.jpg" class="image-fluid" width="100%"
+                    height="600" alt="">
+            </div>
+
+            <div class="" id="bg3">
+                <img src="img/bg3.jpg" class="image-fluid" width="100%"
+                    height="500" alt="">
+            </div>
+        </div>
+
+
+        <div class="container-fluid mt-5" id="container-2nd">
+            <center class="p-5">
+                <h1>How does the Solar Panel Works?</h1>
+                <p style="font-size:22px;">The amount of sunlight that
+                    strikes
+                    the earth's surface in an
+                    hour and a half is enough to handle the <br> entire
+                    world's
+                    energy consumption for a full year. Solar technologies
+                    convert sunlight into electrical energy either through
+                    <br>
+                    photovoltaic (PV) panels or through mirrors that
+                    concentrate
+                    solar radiation. This energy can be used to generate<br>
+                    electricity or be stored in batteries or thermal
+                    storage.
+                </p>
+            </center>
+            <div class="container-fluid
+                mt-5 p-5">
+                <div class="row justify-content-around" id="row-div">
+
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
+                        border-top-0 mt-5"
+                        style="height:200px; width:15%;"><div class="d-flex
+                            flex-column
+                            align-items-center border-0">
+
+                            <img src="img/inverter.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Inverter Inspection</h4></center>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
+                        border-top-0
+                        mt-5" style="height:200px; width:15%;">
+                        <div class="d-flex flex-column
+                            align-items-center border-0">
+
+                            <img src="img/daignostics.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Complete Diagnostics</h4></center>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
+                        border-top-0 mt-5"
+                        style="height:200px; width:15%;">
+                        <div class="d-flex flex-column
+                            align-items-center border-0">
+
+                            <img src="img/repair.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Solar Panel Repair</h4></center>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
+                        border-top-0 mt-5"
+                        style="height:200px; width:15%;"><div class="d-flex
+                            flex-column
+                            align-items-center border-0">
+
+                            <img src="img/monitor.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Updates and Monitoring</h4></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            view plans modal -->
+        <div class="modal fade" id="plans" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">LogIn</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="card mx-auto">
+                                <div class="card-body">
+                                    <div class="logo mb-3"><img
+                                            src="https://img.icons8.com/nolan/64/rounded-square.png"/></div>
+                                    <h3 class="card-title">Metrics</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Everything
+                                        you need to understand your bussiness</h6>
+                                    <div class="row rone mt-4">
+                                        <div class="col-md-6">
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Control
+                                                Center</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Metrics</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Forecast</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Benchmarks</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Customers</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Reports
+                                                and notifications</p>
+                                        </div>
+                                    </div>
+                                    <div class="container kl">
+                                        <div class="row rtwo my-3">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio">
+                                                    <label
+                                                        class="form-check-label">Bill
+                                                        monthly</label>
+                                                    <span class="rate">&#36;390/<span
+                                                            class="text-muted">month</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container kl my-3">
+                                        <div class="row rthree my-3">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio">
+                                                    <label
+                                                        class="form-check-label">Bill
+                                                        yearly &nbsp;&nbsp;<span
+                                                            class="note">SAVE
+                                                            TWO MONTHS</span></label>
+                                                    <span class="nrate">&#36;3,900/<span
+                                                            class="text-muted">year</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary
+                                        btn-lg btn-block mt-3"><span>Subscribe
+                                            now</span></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="container-fluid mt-5" id="container-2nd">
+            <center class="p-5">
+                <h1>How does the Solar Panel Works?</h1>
+                <p style="font-size:22px;">The amount of sunlight that
+                    strikes
+                    the earth's surface in an
+                    hour and a half is enough to handle the <br> entire
+                    world's
+                    energy consumption for a full year. Solar technologies
+                    convert sunlight into electrical energy either through
+                    <br>
+                    photovoltaic (PV) panels or through mirrors that
+                    concentrate
+                    solar radiation. This energy can be used to generate<br>
+                    electricity or be stored in batteries or thermal
+                    storage.
+                </p>
+            </center>
+            <div class="container-fluid border-0 d-flex
+                justify-content-around
+                mt-5 p-5" style="height:400px;">
+
+
+                <div class="container border-top-0 d-flex align-items-center
+                    text-center" style="height:200px; width:15%;">
+                    <h4 class="d-inline-block">Inverter inspection</h4>
+                    <img src="../img/inverter.png" class="img-fluid" alt=""
+                        height="100"
+                        width="100">
+
+                </div>
+
+                <div class="container border-top-0 d-flex align-items-center
+                    text-center" style="height:200px; width:15%;">
+                    <h4>Complete Diagnostics</h4>
+                    <img src="../img/daignostics.png" class="img-fluid" alt=""
+                        height="100"
+                        width="100">
+                </div>
+
+                <div class="container border-top-0 d-flex align-items-center
+                    text-center" style="height:200px; width:15%;">
+                    <h4>Expert Solar Panel Repair</h4>
+                    <img src="../img/repair.png" class="img-fluid" alt=""
+                        height="100"
+                        width="100">
+                </div>
+
+                <div class="container border-top-0 d-flex align-items-center
+                    text-center" style="height:200px; width:15%;">
+                    <h4>Updates & Monitoring</h4>
+                    <img src="../img/monitor.png" class="img-fluid" alt=""
+                        height="100"
+                        width="100">
+                </div>
+            </div>
+        </div> -->
+
+
+        
+        <div class="container-fluid" style="height:700px;padding-top:200px;
+            background-color:rgb(204, 196, 196);">
+
+            <div class="container" style="width:60%;"
+                id="last">
+                <div class="container-fluid border" style="height:600px;
+                    width:40%;" id="last-left">
+                    <center>
+                        <h2 class="mt-5">Elemental Plane</h2>
+                        <br>
+                        <p>
+                            How solar panels work in adverse weather is
+                            perhaps
+                            the most common question about solar energy, and
+                            the
+                            simple answer is: if you can see outside with
+                            your
+                            eyes, then your solar panels are working. How
+                            much
+                            light there is, of course, affects how much
+                            electricity they are able to produce. And poor
+                            weather will reduce their efficiency. But solar
+                            panels work in all weather.
+                        </p>
+                        <br><br>
+                        <button type="button" class="btn"
+                            style="width:200px; height:50px;
+                            font-size:20px;background-color:#834bd1;color:white;">
+                            <i class="bi bi-telephone-outbound"></i> Call Us
+                        </button>
+                    </center>
+                </div>
+                <div class="container-fluid " style="height:600px;
+                    width:40%;" id="last-right">
+                    <img src="img/worker.jpg" class="" alt="workerimg"
+                        height="100%"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <div class="container-fluid d-flex justify-content-center"
+            style="height:700px; padding-top:200px;
+            background-color:rgb(204, 196, 196);">
+
+            <div class="container row" style="width:60%; height:300px;"
+                id="last">
+                <div class="container-fluid border col-6" style="height:600px;
+                    width:40%;" id="last-left">
+                    <center>
+                        <h2 class="mt-5 col-12 col-xl-2 col-lg-3 col-md-5
+                            col-sm-12">Elemental Plane</h2>
+                        <br>
+                        <p>
+                            How solar panels work in adverse weather is
+                            perhaps
+                            the most common question about solar energy, and
+                            the
+                            simple answer is: if you can see outside with
+                            your
+                            eyes, then your solar panels are working. How
+                            much
+                            light there is, of course, affects how much
+                            electricity they are able to produce. And poor
+                            weather will reduce their efficiency. But solar
+                            panels work in all weather.
+                        </p>
+                        <br><br>
+                        <button type="button" class="btn"
+                            style="width:200px; height:50px;
+                            font-size:20px;background-color:#834bd1;color:white;">
+                            <i class="bi bi-telephone-outbound"></i> Call Us
+                        </button>
+                    </center>
+                </div>
+                <div class="container-fluid col-12 col-xl-2 col-lg-3 col-md-5
+                    col-sm-12" style="height:600px;
+                    width:40%;" id="last-right">
+                    <img src="img/worker.jpg" class="" alt="workerimg"
+                        height="100%" width="100%">
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- Footer -->
+        <footer class="bg-light text-center ">
+            <!-- Grid container -->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998" href="#!"
+                        role="button"> <i class="bi bi-facebook"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee" href="#!"
+                        role="button"><i class="bi bi-twitter"></i></a>
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39" href="#!"
+                        role="button"><i class="bi bi-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac" href="#!"
+                        role="button"><i class="bi bi-instagram"></i></a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca" href="#!"
+                        role="button"><i class="bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333" href="#!"
+                        role="button"><i class="bi bi-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+
+
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our Solar Services
+                                        Updates</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form5Example2"
+                                        class="form-control" />
+                                    <label class="form-label"
+                                        for="form5Example2">Email address</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn
+                                    mb-4"
+                                    style="background-color:#834bd1;color:white;">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+
+
+
+                <!-- Section: Links -->
+
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0,
+                0,
+                0.2)">
+                © 2022 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">ElementalPlane.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+    </body>
+</html>
